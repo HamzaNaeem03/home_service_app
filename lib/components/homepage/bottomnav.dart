@@ -11,7 +11,9 @@ class bottomNavBar extends StatelessWidget {
     return BottomNavigationBar(
       items: [
         BottomNavigationBarItem(
-          icon: Icon(Icons.home_outlined,),
+          icon: Icon(
+            Icons.home_outlined,
+          ),
           label: 'home',
         ),
         BottomNavigationBarItem(
@@ -32,7 +34,7 @@ class bottomNavBar extends StatelessWidget {
       // the function is undefined
       selectedItemColor: Color.fromARGB(255, 234, 123, 88),
       backgroundColor: Colors.transparent,
-      unselectedItemColor:  Color(0xFFa2a5a4),
+      unselectedItemColor: Color(0xFFa2a5a4),
     );
   }
 }

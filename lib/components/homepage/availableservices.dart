@@ -43,13 +43,15 @@ class AvailableServices extends StatelessWidget {
                       ),
                       child: Center(
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
                               margin: const EdgeInsets.only(top: 8),
-                              height: MediaQuery.of(context).size.height * 0.1,
-                              width: MediaQuery.of(context).size.width * 0.1,
+                              height: MediaQuery.of(context).size.height * 0.06,
+                              width: MediaQuery.of(context).size.width * 0.08,
                               child: Image.network(
-                                  'https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/2x/external-cleaning-labour-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png'),
+                                  'https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/2x/external-cleaning-labour-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png' , fit: BoxFit.fill,),
                             ),
                             Container(
                               margin: const EdgeInsets.all(4),
@@ -76,13 +78,15 @@ class AvailableServices extends StatelessWidget {
                       ),
                       child: Center(
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
                               margin: const EdgeInsets.only(top: 8),
-                              height: MediaQuery.of(context).size.height * 0.1,
+                              height: MediaQuery.of(context).size.height * 0.06,
                               width: MediaQuery.of(context).size.width * 0.1,
                               child: Image.network(
-                                  'https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/2x/external-plumber-labour-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png'),
+                                  'https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/2x/external-plumber-labour-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png' , fit: BoxFit.fill,),
                             ),
                             Container(
                               margin: const EdgeInsets.all(4),
@@ -108,11 +112,16 @@ class AvailableServices extends StatelessWidget {
                       ),
                       child: Center(
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
                               margin: const EdgeInsets.only(top: 8),
+                              height: MediaQuery.of(context).size.height * 0.06,
+                              width: MediaQuery.of(context).size.width * 0.1,
+                              
                               child: Image.network(
-                                "https://img.icons8.com/external-wanicon-flat-wanicon/2x/external-multimeter-car-service-wanicon-flat-wanicon.png",
+                                "https://img.icons8.com/external-wanicon-flat-wanicon/2x/external-multimeter-car-service-wanicon-flat-wanicon.png", fit: BoxFit.fill,
                                 height:
                                     MediaQuery.of(context).size.height * 0.1,
                                 width: MediaQuery.of(context).size.width * 0.1,
@@ -144,10 +153,12 @@ class AvailableServices extends StatelessWidget {
                       ),
                       child: Center(
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
                               margin: const EdgeInsets.only(top: 8),
-                              height: MediaQuery.of(context).size.height * 0.1,
+                              height: MediaQuery.of(context).size.height * 0.06,
                               width: MediaQuery.of(context).size.width * 0.1,
                               child: Image.network(
                                   'https://img.icons8.com/fluency/2x/drill.png'),
@@ -176,13 +187,15 @@ class AvailableServices extends StatelessWidget {
                       ),
                       child: Center(
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
                               margin: const EdgeInsets.only(top: 8),
-                              height: MediaQuery.of(context).size.height * 0.1,
+                              height: MediaQuery.of(context).size.height * 0.06,
                               width: MediaQuery.of(context).size.width * 0.1,
                               child: Image.network(
-                                  'https://img.icons8.com/external-itim2101-flat-itim2101/2x/external-painter-male-occupation-avatar-itim2101-flat-itim2101.png'),
+                                  'https://img.icons8.com/external-itim2101-flat-itim2101/2x/external-painter-male-occupation-avatar-itim2101-flat-itim2101.png' , fit: BoxFit.fill,),
                             ),
                             Container(
                               margin: const EdgeInsets.all(4),
@@ -208,14 +221,16 @@ class AvailableServices extends StatelessWidget {
                       ),
                       child: Center(
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
                               margin: const EdgeInsets.only(top: 8),
-                              height: MediaQuery.of(context).size.height * 0.1,
+                              height: MediaQuery.of(context).size.height * 0.06,
                               width: MediaQuery.of(context).size.width * 0.1,
                               child: Image.network(
-                                  'https://img.icons8.com/external-itim2101-flat-itim2101/2x/external-gardener-male-occupation-avatar-itim2101-flat-itim2101.png'),
-                            ),
+                                  'https://img.icons8.com/external-itim2101-flat-itim2101/2x/external-gardener-male-occupation-avatar-itim2101-flat-itim2101.png', fit: BoxFit.fill,),
+                             ),
                             Container(
                               margin: const EdgeInsets.all(4),
                               child: Text(
