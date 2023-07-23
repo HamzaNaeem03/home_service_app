@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
 
           // fontFamily: 'Georgia',
           textTheme: const TextTheme(
-            
             bodyText1: TextStyle(color: Color(0xFFa2a5a4)),
             headline6: TextStyle(color: Color(0xFFa2a5a4)),
             subtitle2: TextStyle(color: Color(0xFFa2a5a4)),
