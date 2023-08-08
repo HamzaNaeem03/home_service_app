@@ -1,7 +1,11 @@
 // ignore_for_file: deprecated_member_use
 
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:home_service_app/screens/homepage.dart';
+import 'package:home_service_app/screens/service_details_screen.dart';
+import 'package:home_service_app/screens/services_screen.dart';
 import 'package:home_service_app/screens/signup&login/login.dart';
 import 'package:home_service_app/screens/signup&login/signup.dart';
 
@@ -19,6 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'home service app',
       theme: ThemeData(
           primarySwatch: Colors.grey,
+          
           primaryColor: Color.fromARGB(255, 234, 123, 88),
           accentColor: Color.fromARGB(255, 247, 223, 91),
 
@@ -35,10 +40,11 @@ class MyApp extends StatelessWidget {
         "/login": (context) => const login(),
         "/signup": (context) => const signup(),
         "/home": (context) => const HomePage(),
-
+        "/services" :(context) =>  ServicesScreen(),
+        "/serviceDetails" :(context) =>  ServiceDetailsScreen(),
         // "/profile": (context) =>     ,
       },
-      home: const signup(),
+      home: const signup()
     );
   }
 }

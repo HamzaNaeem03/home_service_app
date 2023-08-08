@@ -1,53 +1,55 @@
-// import 'package:flutter/material.dart';
-// // not being used due to colour issue 
-// class TopBar extends StatelessWidget implements PreferredSizeWidget {
-//   const TopBar({
-//     super.key,
-//   });
+import 'package:flutter/material.dart';
 
-//   @override
-//   Size get preferredSize => Size.fromHeight(60.0);
+// not being used due to colour issue
+class TopBar extends StatelessWidget implements PreferredSizeWidget {
+  const TopBar({
+    super.key,
+  });
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return AppBar(
-//       backgroundColor: Colors.transparent,
-//       leading: Container(
-//         height: 50,
-//         width: 50,
-//         margin: const EdgeInsets.all(8),
-//         // padding: const EdgeInsets.all(1),
-//         decoration: BoxDecoration(
-//           color: Theme.of(context).accentColor,
-//           borderRadius: BorderRadius.circular(12),
-//         ),
-//         child: Icon(
-//           Icons.menu,
-//           color: Theme.of(context).primaryColor,
-//         ),
-//       ),
-//        title : Padding(
-//           padding: const EdgeInsets.only(left: 20, right: 20, bottom: 12),
-//           child: TextField(
-//               decoration: InputDecoration(
-//                   filled: true,
-//                   fillColor: const Color.fromRGBO(43, 43, 56, 1),
-//                   border: OutlineInputBorder(
-//                       borderRadius: BorderRadius.circular(50),
-//                       borderSide: BorderSide.none),
-//                   hintText: "Search",
-//                   hintStyle: const TextStyle(color: Colors.grey),
-//                   prefixIcon: const Icon(
-//                     Icons.search,
-//                     color: Colors.white,
-//                   ),
-//                   suffixIcon: const Icon(
-//                     Icons.mic,
-//                     color: Colors.white,
-//                   )))),
-       
-//     );
-//   }
-  
-  
-// }
+  @override
+  Size get preferredSize => Size.fromHeight(60.0);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      backgroundColor: Colors.white,
+      leading: GestureDetector(
+        onTap: () {
+                    Navigator.pop(context);
+                  },
+        child: Container(
+          height: 50,
+          width: 50,
+          margin: const EdgeInsets.all(8),
+          // padding: const EdgeInsets.only(left: 20, right: 20, bottom: 12),
+          decoration: BoxDecoration(
+            color: Color.fromARGB(255, 247, 223, 91),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Icon(
+            Icons.menu,
+            color: Color.fromARGB(255, 234, 123, 88),
+          ),
+        ),
+      ),
+      title: Container(
+          height: 50,
+          margin: const EdgeInsets.all(8),
+          child: TextField(
+              decoration: InputDecoration(
+            filled: false,
+            fillColor: Colors.white,
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(20),
+              borderSide: const BorderSide(width: 1, color: Colors.grey),
+            ),
+            hintText: "What are you looking for?",
+            hintStyle: const TextStyle(color: Colors.grey),
+            prefixIcon: Icon(
+              Icons.search,
+              color:Color.fromARGB(255, 234, 123, 88),
+            ),
+          ))),
+    );
+  }
+}

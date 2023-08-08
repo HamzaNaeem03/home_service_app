@@ -108,11 +108,7 @@ class signup extends StatelessWidget {
                               ),
                               labelText: "Password",
                             ),
-                            // validator: (value ) {
-                            //   if (value ? .isEmpty) {
-                            //     return "Username can not be empty";
-                            //   }
-                            // },
+                            
                           ),
                         ),
                       ],
@@ -121,9 +117,12 @@ class signup extends StatelessWidget {
                 ),
               ),
               Container(
+                
                 height: 25,
               ),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+    primary: Color.fromARGB(255, 234, 123, 88)),
                   child: Text("create account",
                       style: TextStyle(color: Colors.white)),
                   onPressed: () {
@@ -133,6 +132,8 @@ class signup extends StatelessWidget {
                 height: 50,
               ),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+    primary: Color.fromARGB(255, 234, 123, 88)),
                   child: Text("already have a account",
                       style: TextStyle(color: Colors.white)),
                   onPressed: () {
