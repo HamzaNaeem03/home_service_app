@@ -53,10 +53,9 @@ class _HomePageState extends State<HomePage> {
                 ),
               ))),
         ),
-        body:const AvailableServices(),
-       bottomNavigationBar: bottomNavBar(),
+        body: const AvailableServices(),
+        bottomNavigationBar: bottomNavBar(),
       ),
     );
   }
 }
-
